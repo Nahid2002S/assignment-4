@@ -11,14 +11,16 @@ function mindGame(number){
     return minusResult;
 }
 
+
+
 // Problem No- 2
 //Description : This function takes a string as a perameter and return that the length of this input string is odd or even as an output.
 function evenOdd(text){
-    let character = text.length;
     if(typeof(text) !== 'string'){
         return 'input should be a string';
     }
-    else if(character % 2 === 0){
+    let character = text.length;
+    if(character % 2 === 0){
         return 'even';
     }
     else{
@@ -26,20 +28,24 @@ function evenOdd(text){
     }
 }
 
+
+
 //Problem No- 3
 //Description : This function takes a number as a perameter and at first it calculate the difference between the input number and 7, if the input number is less than 7, it return the difference as an output and if the number is greater than or equal to 7, it return the double value of input number.
 function isLGSeven(num){
-    const difference = num - 7;
     if(typeof(num) !== 'number'){
         return 'input should be a number';
     }
-    else if(difference < 7){
+    const difference = num - 7;
+    if(difference < 7){
         return difference;
     }
     else{
         return num * 2;
     }
 }
+
+
 
 //Problem No- 4
 //Description : This function takes an array of number as a perameter and return that how much element of this array is negative or less than 0.
@@ -59,10 +65,12 @@ function findingBadData(age){
     return amountOfBadData;
 }
 
+
+
 //Problem No - 5
 //Description : This function takes 3 different number as perameter and make some calculation and return the last calculation value as an output.
 function gemsToDiamond(firstFriendGem, secondFriendGem, thirdFriendGem){
-    if(typeof(firstFriendGem) !== 'number' || typeof(secondFriendGem) !== 'number' || typeof(thirdFriendGem) !== 'number' ){
+    if(typeof(firstFriendGem, secondFriendGem, thirdFriendGem) !== 'number'){
         return 'input should be a number and this function must be have 3 perameter';
     }
     const friend1Diamond = firstFriendGem * 21;
